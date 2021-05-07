@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gameapp.css" />
+  <title>Game App</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="left">
+      <h2 class="mesaj"> Mai jos adaugi flipcoins <br>(ce ai adunat din provocarile anterioare)</h2>
+      <input type="text" class="old" placeholder="🌟 adauga-ti bugetul din provocarile anterioare.." />
+      <button class="btn adauga">✔️ da click sa-i adaugi</button>
+      <button class="btn revendica">💳 primesti 3000 flipcoins, adauga-i</button>
+
+      <!-- total flipcoins din provocari anterioare -->
+      <p class="label-totalFlipcoins">✨ Flipcoins (din provocarile anterioare):
+        <span id="vechi-btn" class="oldFlipcoins"></span>
+      </p>
+
+      <!-- revendica bugetul -->
+      <p class="label-buget">✨ Buget revendicat:
+        <span class="revendicaDone"></span>
+      </p>
+      <button class="btn total">🔋 3. Afla totalul cu care intri in joc</button>
+      <!-- scor total live -->
+      <p class="label-total">
+        💥 Total flipcoins: <span class="totalFlipcoins"></span>
+      </p>
+    </section>
+  </main>
+  <!-- start game -->
+  <!-- <div class="controls">
+    <button id="start-btn" class="start-btn btn">Start Game</button>
+    <button id="next-btn" class="next-btn btn hide">Next</button>
+  </div> -->
+  <!-- Q&A -->
+  <main-game>
+    <section class="left ">
+      <div class="container">
+        <form id='form1' onsubmit="return false;">
+          <h3>
+            <div id="question-container">
+              <div id='questionZone'> </div>
+          </h3>
+          <button class="next-btn cheltuieli" onclick='getTotalScore(this.form)'>💸 da click sa vezi cat ai
+            cheltuit</button>
+        </form>
+
+
+        <div id="totalScore">
+          💰 Scor game:0
+        </div>
+
+        <!-- <button class="total-btn">
+          scor final
+        </button> -->
+
+        <!-- <div class="totalFinal">
+          Scor final:0
+        </div> -->
+      </div>
+
+      </div>
+      <div style="height: 100px;"></div>
+
+
+    </section>
+
+  </main-game>
+
+  <script src="gameapp.js"></script>
+</body>
+
+</html>
